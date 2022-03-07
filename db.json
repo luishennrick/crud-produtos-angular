@@ -1,0 +1,41 @@
+{
+  "produto": [
+    {
+      "id": "1",
+      "nome_produto": "shampood",
+      "desc_produto": "para cabelo",
+      "preco_produto": 12.5,
+      "dt_atualizacao": "07/03/22"
+    },
+    {
+      "nome_produto": "sabonete",
+      "desc_produto": "higiene",
+      "preco_produto": "1.00",
+      "id": "nPNcRti"
+    },
+    {
+      "nome_produto": "pastilha  menta",
+      "desc_produto": "garganta",
+      "preco_produto": "5.00",
+      "id": "Jtjj9VX"
+    },
+    {
+      "nome_produto": "chá",
+      "desc_produto": "calmante",
+      "preco_produto": "2.00",
+      "id": "x4qucXM"
+    },
+    {
+      "nome_produto": "ceral",
+      "desc_produto": "alimento",
+      "preco_produto": "1.50",
+      "id": "Sak5Lqt"
+    },
+    {
+      "nome_produto": "sabonete dolve",
+      "desc_produto": "higiene",
+      "preco_produto": "2.00",
+      "id": "yw7iaGa"
+    }
+  ]
+}
