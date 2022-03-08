@@ -1,27 +1,65 @@
 # ProdutosApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+# Indice
 
-## Development server
+- [Sobre](#-sobre)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Criando o projeto](#-criando-o-projeto)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🔖&nbsp; Sobre
 
-## Code scaffolding
+O projeto em desenvolvimento é um CRUD, que foi criado para fins de estudo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p align="center">
+  <kbd>
+    <img width="1000" style="border-radius: 5px" height="300" src="./imgsreadme/print1.JPG" alt="Intro">
+  </kbd>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <kbd>
+    <img width="1000" style="border-radius: 5px" height="300" src="./imgsreadme/print2.JPG" alt="Register adopt">
+  </kbd>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <kbd>
+    <img width="1000" style="border-radius: 5px" height="300" src="./imgsreadme/print3.JPG" alt="Chat">
+  </kbd>
+</p>
 
-## Running unit tests
+## 🚀 Tecnologias utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-## Running end-to-end tests
+- [Angular](https://angular.io/docs)
+- [Angular Material](https://material.angular.io/)
+- [JSON Server](https://www.npmjs.com/package/json-server)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🗂 Criando o projeto
 
-## Further help
+```bash
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    # Instale as ferramentas de linha de comando
+    $ npm install -g @angular/cli
+    $ ng --version
+
+    # Criar o repositório
+    $ ng new seu-app
+
+    # Instalar as ferramentas
+    $ ng add @angular/material
+    $ ng generate @angular/material:nav menu
+    $ ng g service api
+    $ npm install -g json-server
+    
+
+    # Iniciar o projeto
+    $ ng serve
+    $ json-server --watch db.json
+  ```
+  ---
+    
+   
+	   🚀 Desenvolvido por Luís Henrique.
+   
+   
+   
