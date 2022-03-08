@@ -30,7 +30,7 @@ export class ProdutoNovoComponent implements OnInit {
     this.isLoadingResults = true;
     this.api.addProduto(form)
       .subscribe(res => {
-          const id = res['_id'];
+          const id = res['id'];
           this.isLoadingResults = false;
           this.router.navigate(['/produto-detalhe', id]);
         }, (err) => {

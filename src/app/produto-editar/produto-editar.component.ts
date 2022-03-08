@@ -8,7 +8,7 @@ import { ApiService } from 'src/service/api.service';
   styleUrls: ['./produto-editar.component.scss']
 })
 export class ProdutoEditarComponent implements OnInit {
-  _id: String = '';
+  id: String = '';
   productForm: FormGroup;
   nome_produto: String = '';
   desc_produto: String = '';
@@ -27,7 +27,7 @@ export class ProdutoEditarComponent implements OnInit {
 
  getProduto(id: any) {
   this.api.getProduto(id).subscribe(data => {
-    this._id = data._id;
+    this.id = data.id;
     this.productForm.setValue({
       nome_produto: data.nome_produto,
       desc_produto: data.desc_produto,
@@ -38,10 +38,10 @@ export class ProdutoEditarComponent implements OnInit {
 
 updateProduto(form: NgForm) {
   this.isLoadingResults = true;
-  this.api.updateProduto(this._id, form)
+  this.api.updateProduto(this.id, form)
     .subscribe(res => {
         this.isLoadingResults = false;
-        this.router.navigate(['/produto-detalhe/' + this._id]);
+        this.router.navigate(['/produto-detalhe/' + this.id]);
       }, (err) => {
         console.log(err);
         this.isLoadingResults = false;

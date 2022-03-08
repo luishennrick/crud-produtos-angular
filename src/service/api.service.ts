@@ -35,7 +35,7 @@ export class ApiService {
   addProduto (produto: any): Observable<Produto> {
     return this.http.post<Produto>(apiUrl, produto, httpOptions).pipe(
       // tslint:disable-next-line:no-shadowed-variable
-      tap((produto: Produto) => console.log(`adicionou o produto com w/ id=${produto._id}`)),
+      tap((produto: Produto) => console.log(`adicionou o produto com w/ id=${produto.id}`)),
       catchError(this.handleError<Produto>('addProduto'))
     );
   }
@@ -49,7 +49,7 @@ export class ApiService {
   }
 
   deleteProduto (id: any): Observable<Produto> {
-    const url = `${apiUrl}/delete/${id}`;
+    const url = `${apiUrl}/${id}`;
 
     return this.http.delete<Produto>(url, httpOptions).pipe(
       tap(_ => console.log(`remove o produto com id=${id}`)),

@@ -20,8 +20,8 @@
         </dl>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-flat-button color="primary" class="teste" [routerLink]="['/produto-editar', produto._id]"><mat-icon>edit</mat-icon> Editar</button>
-        <button mat-flat-button color="warn" (click)="deleteProduto(produto._id)"><mat-icon>delete</mat-icon> Excluir</button>
+        <button mat-flat-button color="primary" class="teste" [routerLink]="['/produto-editar', produto.id]"><mat-icon>edit</mat-icon> Editar</button>
+        <button mat-flat-button color="warn" (click)="deleteProduto(produto.id)"><mat-icon>delete</mat-icon> Excluir</button>
       </mat-card-actions>
     </mat-card>
   </div>

@@ -26,16 +26,10 @@
       "id": "x4qucXM"
     },
     {
-      "nome_produto": "ceral",
+      "nome_produto": "cereal",
       "desc_produto": "alimento",
       "preco_produto": "1.50",
       "id": "Sak5Lqt"
-    },
-    {
-      "nome_produto": "sabonete dolve",
-      "desc_produto": "higiene",
-      "preco_produto": "2.00",
-      "id": "yw7iaGa"
     }
   ]
 }

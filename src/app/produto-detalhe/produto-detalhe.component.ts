@@ -8,7 +8,7 @@ import { Produto } from 'src/model/produto';
   styleUrls: ['./produto-detalhe.component.scss']
 })
 export class ProdutoDetalheComponent implements OnInit {
-  produto: Produto = { _id: '', nome_produto: '', desc_produto: '', preco_produto: 0 , dt_atualizacao: '' };
+  produto: Produto = { id: '', nome_produto: '', desc_produto: '', preco_produto: 0 , dt_atualizacao: '' };
   isLoadingResults = true;
   constructor(private router: Router, private route: ActivatedRoute, private api: ApiService) { }
 
